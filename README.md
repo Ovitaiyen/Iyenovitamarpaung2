@@ -179,12 +179,12 @@
                 <td><input type="text" name="nama" required></td>
             </tr>
             <tr>
-                <th>NIM</th>
-                <td><input type="text" name="nim" required></td>
+                <th>Nomor Anggota Perpustakaan</th>
+                <td><input type="text" name="nomor anggota perpustakaan" required></td>
             </tr>
             <tr>
-                <th>Alamat</th>
-                <td><textarea name="alamat" rows="3" required></textarea></td>
+                <th>Tanggal Pemesanan</th>
+                <td><textarea name="Tanggal Pemesanan" rows="3" required></textarea></td>
             </tr>
             <tr>
                 <th>Jenis Kelamin</th>
@@ -202,12 +202,16 @@
                 <td><input type="text" name="no_hp" required></td>
             </tr>
             <tr>
-                <th>Tempat Lahir</th>
-                <td><input type="text" name="tempat_lahir" required></td>
+                <th>Penulis Buku</th>
+                <td><input type="text" name="Penulis Buku" required></td>
             </tr>
             <tr>
-                <th>Tanggal Lahir</th>
-                <td><input type="date" name="tanggal_lahir" required></td>
+                <th>No ISBN</th>
+                <td><input type="date" name="no isbn" required></td>
+            </tr>
+             <tr>
+                <th>Judul Buku Yang Dipesan</th>
+                <td><input type="date" name="judul buku yang dipesan" required></td>
             </tr>
         </table>
         <br>
