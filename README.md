@@ -1,5 +1,5 @@
-# iyen-ovita-marpaung
-<!DOCTYPE html>
+#  Perpustakaan Iain Fattahul Muluk Papua
+
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -24,9 +24,6 @@
     <h2>Berikut ini gambar dari Perpustakaan iain fattahul muluk papua</h2>
     <img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" >
 
-    <h2>Tautan</h2>
-    <p>Klik di sini untuk mengunjungi <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
-
     <body>
   <h1>Contoh Video YouTube di HTML</h1>
   <iframe 
@@ -46,12 +43,6 @@
         <source src="music.ogg" type="audio/ogg">
         Browser Anda tidak mendukung tag audio.
     </audio>
-<body>
-    <h2>Footer</h2>
-    <footer>
-        <p>&copy; 2024 Hak Cipta Dilindungi. Semua hak dilindungi.</p>
-    </footer>
-</body>
 <h2>Formulir Perpustakaan iain fattahul muluk papua</h2>
     
     <form action="#" method="post">
@@ -207,7 +198,7 @@
             </tr>
             <tr>
                 <th>No ISBN</th>
-                <td><input type="date" name="no isbn" required></td>
+               <td><input type="text" name="no isbn" required></td>
             </tr>
              <tr>
                 <th>Judul Buku Yang Dipesan</th>
