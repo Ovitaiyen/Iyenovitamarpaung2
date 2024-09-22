@@ -233,34 +233,25 @@
             </tr>
             <tr>
                 <th>Tanggal Pemesanan</th>
-                <td><textarea name="Tanggal Pemesanan" rows="3" required></textarea></td>
+                <td><textarea name="Tanggal Peminjamanan" rows="3" required></textarea></td>
             </tr>
-            <tr>
-                <th>Jenis Kelamin</th>
-                <td>
-                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
-                    <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
-                </td>
-            </tr>
+          
             <tr>
                 <th>Email</th>
                 <td><input type="email" name="email" required></td>
             </tr>
             <tr>
-                <th>No HP</th>
-                <td><input type="text" name="no_hp" required></td>
+                <th>No Telepon</th>
+                <td><input type="text" name="no telepon" required></td>
             </tr>
-            <tr>
-                <th>Penulis Buku</th>
-                <td><input type="text" name="Penulis Buku" required></td>
-            </tr>
+           
             <tr>
                 <th>No ISBN</th>
                 <td><input type="date" name="no isbn" required></td>
             </tr>
              <tr>
-                <th>Judul Buku Yang Dipesan</th>
-                <td><input type="date" name="judul buku yang dipesan" required></td>
+                <th>Tanggal Perpanjangan Buku</th>
+                <td><input type="date" name="Tanggal perpanjangan buku" required></td>
             </tr>
         </table>
         <br>
