@@ -27,12 +27,18 @@
     <h2>Tautan</h2>
     <p>Klik di sini untuk mengunjungi <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
 
-    <h2>Video Profil Perpustakaan iain fattahul muluk papua</h2>
-    <https://youtu.be/on_OgiR0iVk?si=mn46kNpCmWOvSb_G>
-        <source src="movie.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        Browser Anda tidak mendukung tag video.
-    </video>
+    <body>
+  <h1>Contoh Video YouTube di HTML</h1>
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/on_OgiR0iVk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</body>
 
     <h2>Audio</h2>
     <audio controls>
