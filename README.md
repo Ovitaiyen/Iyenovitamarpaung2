@@ -97,4 +97,76 @@
     </form>
 
 </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Bahan Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Bahan Buku</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Judul Buku</th>
+                <th>Pengarang</th>
+                <th>Penerbit</th>
+                <th>Tahun Terbit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Pemrograman Web Dasar</td>
+                <td>Andi Saputra</td>
+                <td>Media Press</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pengenalan HTML dan CSS</td>
+                <td>Budi Santoso</td>
+                <td>Ilmu Komputer</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>JavaScript untuk Pemula</td>
+                <td>Siti Rahmawati</td>
+                <td>Edu Books</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Database dan SQL</td>
+                <td>Joko Widodo</td>
+                <td>Tech Press</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
