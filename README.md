@@ -211,7 +211,7 @@
             </tr>
              <tr>
                 <th>Judul Buku Yang Dipesan</th>
-                <td><input type="date" name="judul buku yang dipesan" required></td>
+                <td><input type="text" name="judul buku yang dipesan" required></td>
             </tr>
         </table>
         <br>
@@ -247,7 +247,7 @@
            
             <tr>
                 <th>No ISBN</th>
-                <td><input type="date" name="no isbn" required></td>
+                <td><input type="text" name="no isbn" required></td>
             </tr>
              <tr>
                 <th>Tanggal Perpanjangan Buku</th>
