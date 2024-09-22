@@ -52,7 +52,7 @@
         <p>&copy; 2024 Hak Cipta Dilindungi. Semua hak dilindungi.</p>
     </footer>
 </body>
-<h2>Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</h2>
+<h2>Formulir Perpustakaan iain fattahul muluk papua</h2>
     
     <form action="#" method="post">
         <table>
@@ -170,7 +170,7 @@
     </table>
 </body>
 <body>
-<h2>Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</h2>
+<h2>Formulir Pemesanan Buku</h2>
     
     <form action="#" method="post">
         <table>
@@ -212,6 +212,45 @@
              <tr>
                 <th>Judul Buku Yang Dipesan</th>
                 <td><input type="date" name="judul buku yang dipesan" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+<body>
+<h2>Formulir Perpanjangan Peminjaman Buku</h2>
+    
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <th><body>Nomor Anggota Perpustakaan</th>
+                <td><input type="text" name="Nomor Anggota Perpustakaan" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Peminjaman</th>
+                <td><textarea name="Tanggal Peminjaman" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>No HP</th>
+                <td><input type="text" name="no_hp" required></td>
+            </tr>
+            <tr>
+                <th>No ISBN</th>
+                <td><input type="text" name="No ISBN" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Perpanjangan Buku</th>
+                <td><input type="date" name="tanggal_lahir" required></td>
             </tr>
         </table>
         <br>
