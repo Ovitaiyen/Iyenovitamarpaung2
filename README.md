@@ -1,6 +1,26 @@
 #  Perpustakaan Iain Fattahul Muluk Papua
 
 <html lang="id">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://i.ytimg.com/vi/CkKhgCXphO0/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
