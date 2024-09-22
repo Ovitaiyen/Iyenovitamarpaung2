@@ -10,9 +10,7 @@
             justify-content: center;
             align-items: center;
             background-image: url('https://i.ytimg.com/vi/CkKhgCXphO0/maxresdefault.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+           
         }
 
         .content {
