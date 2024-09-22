@@ -22,7 +22,7 @@
     <hr/>
 
     <h2>Berikut ini gambar dari Perpustakaan Kab.Asahan</h2>
-    <img src="https://perpustakaan.asahankab.go.id/content/uploads/slider-2023-02-152.jpeg?1688794566" width="300" height="200">
+    <img src="https://perpustakaan.asahankab.go.id/content/uploads/slider-2023-02-152.jpeg?1688794566" >
 
     <h2>Tautan</h2>
     <p>Klik di sini untuk mengunjungi <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
