@@ -16,12 +16,12 @@
     </style>
 </head>
 <body>
-    <h1>Selamat Datang di Halaman Saya!</h1>
-    <p>Ini adalah contoh teks dalam paragraf. Anda dapat menambahkan teks lebih banyak di sini.</p>
+    <h1>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h1>
+    <p>Perkenalkan nama saya Iyen Ovita Marpaung, Nim 222201011 Program Studi D3 Perpustakaan Mata kuliah Pemrograman Web. Ini merupakan perpustakaan homepage pertama saya</p>
 
     <hr/>
 
-    <h2>Gambar</h2>
+    <h2>Berikut ini gambar dari Perpustakaan Kab.Asahan</h2>
     <img src="gambar.jpg" alt="Contoh Gambar" width="300" height="200">
 
     <h2>Tautan</h2>
