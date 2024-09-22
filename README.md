@@ -219,8 +219,7 @@
     </form>
 
 </body>
-<body>
-<h2>Formulir Perpanjangan Peminjaman Buku</h2>
+<h2>Formulir Perpanjangan peminjaman buku </h2>
     
     <form action="#" method="post">
         <table>
@@ -229,12 +228,19 @@
                 <td><input type="text" name="nama" required></td>
             </tr>
             <tr>
-                <th><body>Nomor Anggota Perpustakaan</th>
-                <td><input type="text" name="Nomor Anggota Perpustakaan" required></td>
+                <th>Nomor Anggota Perpustakaan</th>
+                <td><input type="text" name="nomor anggota perpustakaan" required></td>
             </tr>
             <tr>
-                <th>Tanggal Peminjaman</th>
-                <td><textarea name="Tanggal Peminjaman" rows="3" required></textarea></td>
+                <th>Tanggal Pemesanan</th>
+                <td><textarea name="Tanggal Pemesanan" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
+                </td>
             </tr>
             <tr>
                 <th>Email</th>
@@ -245,18 +251,21 @@
                 <td><input type="text" name="no_hp" required></td>
             </tr>
             <tr>
-                <th>No ISBN</th>
-                <td><input type="text" name="No ISBN" required></td>
+                <th>Penulis Buku</th>
+                <td><input type="text" name="Penulis Buku" required></td>
             </tr>
             <tr>
-                <th>Tanggal Perpanjangan Buku</th>
-                <td><input type="date" name="tanggal_lahir" required></td>
-          
-    </table>
+                <th>No ISBN</th>
+                <td><input type="date" name="no isbn" required></td>
+            </tr>
+             <tr>
+                <th>Judul Buku Yang Dipesan</th>
+                <td><input type="date" name="judul buku yang dipesan" required></td>
+            </tr>
+        </table>
         <br>
         <input type="submit" value="Submit">
     </form>
-
 
 </body>
 </html>
