@@ -251,11 +251,12 @@
             <tr>
                 <th>Tanggal Perpanjangan Buku</th>
                 <td><input type="date" name="tanggal_lahir" required></td>
-            </tr>
-        </table>
+          
+    </table>
         <br>
         <input type="submit" value="Submit">
     </form>
+
 
 </body>
 </html>
