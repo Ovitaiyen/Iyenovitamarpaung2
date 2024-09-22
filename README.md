@@ -21,14 +21,14 @@
 
     <hr/>
 
-    <h2>Berikut ini gambar dari Perpustakaan Kab.Asahan</h2>
-    <img src="https://perpustakaan.asahankab.go.id/content/uploads/slider-2023-02-152.jpeg?1688794566" >
+    <h2>Berikut ini gambar dari Perpustakaan iain fattahul muluk papua</h2>
+    <img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" >
 
     <h2>Tautan</h2>
     <p>Klik di sini untuk mengunjungi <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
 
-    <h2>Video</h2>
-    <video width="320" height="240" controls>
+    <h2>Video Profil Perpustakaan iain fattahul muluk papua</h2>
+    <https://youtu.be/on_OgiR0iVk?si=mn46kNpCmWOvSb_G>
         <source src="movie.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Browser Anda tidak mendukung tag video.
