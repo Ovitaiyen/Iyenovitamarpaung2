@@ -169,4 +169,50 @@
         </tbody>
     </table>
 </body>
+<body>
+<h2>Formulir Anggota Perpustakaan Program Studi Perpustakaan dan Sains Informasi</h2>
+    
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <th>NIM</th>
+                <td><input type="text" name="nim" required></td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td><textarea name="alamat" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>No HP</th>
+                <td><input type="text" name="no_hp" required></td>
+            </tr>
+            <tr>
+                <th>Tempat Lahir</th>
+                <td><input type="text" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Lahir</th>
+                <td><input type="date" name="tanggal_lahir" required></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
 </html>
