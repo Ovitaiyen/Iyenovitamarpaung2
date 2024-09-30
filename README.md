@@ -249,6 +249,8 @@
         <input type="submit" value="Submit">
     </form>
     <!DOCTYPE html>
+     <html>
+    <body>
         <h1> Pengertian HTML dan CSS </h1>
         <p>HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.</p>
     
