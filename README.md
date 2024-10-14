@@ -56,14 +56,13 @@
     <div id="halaman">
         <nav class="navbar"> <!-- Menambahkan kelas untuk styling -->
             <ul>
-                <li><a href="#">Menu-1</a></li>
-                <li><a href="#">Menu-2</a></li>
-                <li><a href="#">Menu-3</a></li>
+                <li><a href="#">Menu</a></li>
                 <li>
-                    <a href="#">Menu-4</a>
+                    <a href="#">dropdown</a>
                     <ul>
                         <li><a href="#">Submenu-1</a></li>
                         <li><a href="#">Submenu-2</a></li>
+                        <li><a href="#">Submenu-3</a></li>
                     </ul>
                 </li>
             </ul>
