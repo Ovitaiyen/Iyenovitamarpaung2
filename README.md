@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -73,24 +72,6 @@
 </html>
 
 
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1 {
-            color: #4CAF50;
-            text-align: center;
-        }
-        h2 {
-            color: #333;
-        }
-        p {
-            margin: 15px 0;
-        }
-    </style>
-</head>
-<body>
 
   
     <h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
