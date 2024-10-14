@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-       <html lang="en">
-
-<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="css"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Tautkan file CSS -->
 </head>
 
 <body>
 
     <div id="halaman">
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="#">Menu-1</a></li>
                 <li><a href="#">Menu-2</a></li>
                 <li><a href="#">Menu-3</a></li>
+                <li>
+                    <a href="#">Menu-4</a>
+                    <ul>
+                        <li><a href="#">Submenu-1</a></li>
+                        <li><a href="#">Submenu-2</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
 
 </body>
-
 </html>
+
 
         body {
             font-family: Arial, sans-serif;
