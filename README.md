@@ -5,13 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="styles.css"> <"css/a.html">
+    <style>
+        .navbar {
+            background-color: #333;
+            position: relative;
+            z-index: 999;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar li {
+            display: inline-block;
+            position: relative; /* Untuk menempatkan submenu dengan benar */
+        }
+
+        .navbar li a {
+            color: white;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .navbar ul ul {
+            position: absolute;
+            top: 100%;
+            display: none;
+            background-color: #333; /* Untuk mempertahankan gaya dropdown */
+        }
+
+        .navbar ul ul li {
+            display: block;
+        }
+
+        .navbar li:hover > ul {
+            display: block;
+        }
+
+        .navbar ul ul li a:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="halaman">
-        <nav class="navbar">
+        <nav class="navbar"> <!-- Menambahkan kelas untuk styling -->
             <ul>
                 <li><a href="#">Menu-1</a></li>
                 <li><a href="#">Menu-2</a></li>
@@ -29,6 +72,7 @@
 
 </body>
 </html>
+
 
 
         body {
