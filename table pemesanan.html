@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            margin-bottom: 20px;
+        }
+        th {
+            text-align: left;
+            padding-right: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pemesanan Buku</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th>Nama</th>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <th>Nomor Anggota Perpustakaan</th>
+                <td><input type="text" name="nomor_anggota_perpustakaan" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Peminjamanan</th>
+                <td><input type="date" name="tanggal_peminjamanan" required></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th>No Telepon</th>
+                <td><input type="text" name="no_telepon" required></td>
+            </tr>
+            <tr>
+                <th>No ISBN</th>
+                <td><input type="text" name="no_isbn" required></td>
+            </tr>
+            <tr>
+                <th>Tanggal Perpanjangan Buku</th>
+                <td><input type="date" name="tanggal_perpanjangan_buku" required></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
 
