@@ -70,100 +70,12 @@
 
 </body>
 </html>
-
-
-
-  
-    <h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
-    <h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
-    <p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
-
-    <hr/>
-
-    <h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
-    <h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
-    <p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
-
-    <div class="dropdown">
-        <button class="mainmenubtn">Main Menu</button>
-        <div class="dropdown-child">
-            <a href="http://www.yourdomain.com/page1.html">Sub Menu 1</a>
-            <a href="http://www.yourdomain.com/page2.html">Sub Menu 2</a>
-            <a href="http://www.yourdomain.com/page3.html">Sub Menu 3</a>
-            <a href="http://www.yourdomain.com/page4.html">Sub Menu 4</a>
-            <a href="http://www.yourdomain.com/page5.html">Sub Menu 5</a>
-        </div>
-    
-    <h2>Berikut ini gambar dari Perpustakaan IAIN Fattahul Muluk Papua</h2>
-    <img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" alt="Perpustakaan IAIN Fattahul Muluk Papua">
-
-    <h2>Video Profil Perpustakaan IAIN Fattahul Muluk Papua</h2>
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/on_OgiR0iVk" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen> </iframe>
-
-
-    <h1>Inong Dang Ho Na Sala</h1>
-    <audio controls>
-        <source src="path/to/your/audio/InongDangHoNaSalaOsenHutasoit.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-
-<h2>Formulir Perpustakaan iain fattahul muluk papua</h2>
-    
-    <form action="#" method="post">
-        <table>
-            <tr>
-                <th>Nama</th>
-                <td><input type="text" name="nama" required></td>
-            </tr>
-            <tr>
-                <th>NIM</th>
-                <td><input type="text" name="nim" required></td>
-            </tr>
-            <tr>
-                <th>Alamat</th>
-                <td><textarea name="alamat" rows="3" required></textarea></td>
-            </tr>
-            <tr>
-                <th>Jenis Kelamin</th>
-                <td>
-                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
-                    <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
-                </td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><input type="email" name="email" required></td>
-            </tr>
-            <tr>
-                <th>No HP</th>
-                <td><input type="text" name="no_hp" required></td>
-            </tr>
-            <tr>
-                <th>Tempat Lahir</th>
-                <td><input type="text" name="tempat_lahir" required></td>
-            </tr>
-            <tr>
-                <th>Tanggal Lahir</th>
-                <td><input type="date" name="tanggal_lahir" required></td>
-            </tr>
-        </table>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-
-</body>
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabel Bahan Buku</title>
+    <title>Perpustakaan IAIN Fattahul Muluk Papua</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -189,147 +101,197 @@
     </style>
 </head>
 <body>
-    <h1>Daftar Bahan Buku</h1>
+
+<h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
+<h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
+<p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
+
+<h2>Gambar Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" alt="Perpustakaan IAIN Fattahul Muluk Papua" style="width:100%; height:auto;">
+
+<h2>Video Profil Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/on_OgiR0iVk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+<h1>Inong Dang Ho Na Sala</h1>
+<audio controls>
+    <source src="path/to/your/audio/InongDangHoNaSalaOsenHutasoit.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<h2>Formulir Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<form action="#" method="post">
     <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Judul Buku</th>
-                <th>Pengarang</th>
-                <th>Penerbit</th>
-                <th>Tahun Terbit</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Pemrograman Web Dasar</td>
-                <td>Andi Saputra</td>
-                <td>Media Press</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Pengenalan HTML dan CSS</td>
-                <td>Budi Santoso</td>
-                <td>Ilmu Komputer</td>
-                <td>2021</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>JavaScript untuk Pemula</td>
-                <td>Siti Rahmawati</td>
-                <td>Edu Books</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Database dan SQL</td>
-                <td>Joko Widodo</td>
-                <td>Tech Press</td>
-                <td>2022</td>
-            </tr>
-        </tbody>
+        <tr>
+            <th>Nama</th>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <th>NIM</th>
+            <td><input type="text" name="nim" required></td>
+        </tr>
+        <tr>
+            <th>Alamat</th>
+            <td><textarea name="alamat" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+            <th>Jenis Kelamin</th>
+            <td>
+                <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
+            </td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>No HP</th>
+            <td><input type="text" name="no_hp" required></td>
+        </tr>
+        <tr>
+            <th>Tempat Lahir</th>
+            <td><input type="text" name="tempat_lahir" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Lahir</th>
+            <td><input type="date" name="tanggal_lahir" required></td>
+        </tr>
     </table>
-</body>
-<body>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Daftar Bahan Buku</h1>
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Penerbit</th>
+            <th>Tahun Terbit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Pemrograman Web Dasar</td>
+            <td>Andi Saputra</td>
+            <td>Media Press</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pengenalan HTML dan CSS</td>
+            <td>Budi Santoso</td>
+            <td>Ilmu Komputer</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JavaScript untuk Pemula</td>
+            <td>Siti Rahmawati</td>
+            <td>Edu Books</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Database dan SQL</td>
+            <td>Joko Widodo</td>
+            <td>Tech Press</td>
+            <td>2022</td>
+        </tr>
+    </tbody>
+</table>
+
 <h2>Formulir Pemesanan Buku</h2>
-    
-    <form action="#" method="post">
-        <table>
-            <tr>
-                <th>Nama</th>
-                <td><input type="text" name="nama" required></td>
-            </tr>
-            <tr>
-                <th>Nomor Anggota Perpustakaan</th>
-                <td><input type="text" name="nomor anggota perpustakaan" required></td>
-            </tr>
-            <tr>
-                <th>Tanggal Pemesanan</th>
-                <td><textarea name="Tanggal Pemesanan" rows="3" required></textarea></td>
-            </tr>
-            <tr>
-                <th>Jenis Kelamin</th>
-                <td>
-                    <input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki
-                    <input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan
-                </td>
-            </tr>
-            <tr>
-                <th>Email</th>
-                <td><input type="email" name="email" required></td>
-            </tr>
-            <tr>
-                <th>No HP</th>
-                <td><input type="text" name="no_hp" required></td>
-            </tr>
-            <tr>
-                <th>Penulis Buku</th>
-                <td><input type="text" name="Penulis Buku" required></td>
-            </tr>
-            <tr>
-                <th>No ISBN</th>
-               <td><input type="text" name="no isbn" required></td>
-            </tr>
-             <tr>
-                <th>Judul Buku Yang Dipesan</th>
-                <td><input type="text" name="judul buku yang dipesan" required></td>
-            </tr>
-        </table>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-<!DOCTYPE html>
-        <h1> Pengertian HTML dan CSS </h1>
-        <p>HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.</p>
-    
-        <p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen-elemen HTML. Penggunaan CSS memungkinkan pemisahan antara struktur dan tata letak, sehingga HTML dapat fokus pada struktur konten, sementara CSS mengontrol cara konten tersebut ditampilkan.</p>
-    </body>
-    </html>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <th>Nomor Anggota Perpustakaan</th>
+            <td><input type="text" name="nomor_anggota" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Pemesanan</th>
+            <td><input type="date" name="tanggal_pemesanan" required></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>No HP</th>
+            <td><input type="text" name="no_hp" required></td>
+        </tr>
+        <tr>
+            <th>Penulis Buku</th>
+            <td><input type="text" name="penulis_buku" required></td>
+        </tr>
+        <tr>
+            <th>No ISBN</th>
+            <td><input type="text" name="no_isbn" required></td>
+        </tr>
+        <tr>
+            <th>Judul Buku Yang Dipesan</th>
+            <td><input type="text" name="judul_buku" required></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Formulir Perpanjangan Peminjaman Buku</h2>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <th>Nomor Anggota Perpustakaan</th>
+            <td><input type="text" name="nomor_anggota" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Peminjaman</th>
+            <td><input type="date" name="tanggal_peminjaman" required></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>No Telepon</th>
+            <td><input type="text" name="no_telepon" required></td>
+        </tr>
+        <tr>
+            <th>No ISBN</th>
+            <td><input type="text" name="no_isbn" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Perpanjangan Buku</th>
+            <td><input type="date" name="tanggal_perpanjangan" required></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Pengertian HTML dan CSS</h1>
+<p>HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.</p>
+
+<p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen
+
+
 </body>
-<h2>Formulir Perpanjangan peminjaman buku </h2>
-    
-    <form action="#" method="post">
-        <table>
-            <tr>
-                <th>Nama</th>
-                <td><input type="text" name="nama" required></td>
-            </tr>
-            <tr>
-                <th>Nomor Anggota Perpustakaan</th>
-                <td><input type="text" name="nomor anggota perpustakaan" required></td>
-            </tr>
-            <tr>
-                <th>Tanggal Pemesanan</th>
-                <td><textarea name="Tanggal Peminjamanan" rows="3" required></textarea></td>
-            </tr>
-          
-            <tr>
-                <th>Email</th>
-                <td><input type="email" name="email" required></td>
-            </tr>
-            <tr>
-                <th>No Telepon</th>
-                <td><input type="text" name="no telepon" required></td>
-            </tr>
-           
-            <tr>
-                <th>No ISBN</th>
-                <td><input type="text" name="no isbn" required></td>
-            </tr>
-             <tr>
-                <th>Tanggal Perpanjangan Buku</th>
-                <td><input type="date" name="Tanggal perpanjangan buku" required></td>
-            </tr>
-        </table>
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-        <h1> Pengertian HTML dan CSS </h1>
-        <p>HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.</p>
-    
-        <p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen-elemen HTML. Penggunaan CSS memungkinkan pemisahan antara struktur dan tata letak, sehingga HTML dapat fokus pada struktur konten, sementara CSS mengontrol cara konten tersebut ditampilkan.</p>
-
-
 </html>
