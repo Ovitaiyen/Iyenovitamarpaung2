@@ -104,7 +104,7 @@
 
 <h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
 <h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
-<p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
+<p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya https://perpustakaan.iainfmpapua.ac.id/.</p>
 
 <h2>Gambar Perpustakaan IAIN Fattahul Muluk Papua</h2>
 <img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" alt="Perpustakaan IAIN Fattahul Muluk Papua" style="width:100%; height:auto;">
