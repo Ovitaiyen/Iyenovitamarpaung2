@@ -34,7 +34,7 @@
 </head>
 <body>
 
-    <h1>Selamat datang di Perpustakaan Online</h1>
+    <h1>Selamat datang di Perpustakaan Papua</h1>
     <div id="book-list" class="book-list">
         <h2>Daftar Buku:</h2>
         <!-- List buku akan ditampilkan di sini -->
@@ -118,102 +118,7 @@
 
 </body>
 
-    <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pameran Buku</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        .gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .book-item {
-            margin: 15px;
-            text-align: center;
-        }
-
-        .book-item img {
-            width: 200px;
-            height: auto;
-            cursor: pointer;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .book-item img:hover {
-            transform: scale(1.1);
-        }
-
-        .description {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Pameran Buku</h1>
-
-        <div class="gallery">
-            <div class="book-item">
-                <img src="https://via.placeholder.com/200x300?text=Buku+1" alt="Buku 1" onclick="showDescription('deskripsiBuku1')">
-                <div id="deskripsiBuku1" class="description">
-                    <p><strong>Buku 1:</strong> Buku ini menceritakan petualangan seru di dunia fantasi. Ikuti kisahnya yang penuh misteri!</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="https://via.placeholder.com/200x300?text=Buku+2" alt="Buku 2" onclick="showDescription('deskripsiBuku2')">
-                <div id="deskripsiBuku2" class="description">
-                    <p><strong>Buku 2:</strong> Buku ini membahas kehidupan sehari-hari dengan humor yang menghibur. Cocok untuk semua kalangan.</p>
-                </div>
-            </div>
-            <div class="book-item">
-                <img src="https://via.placeholder.com/200x300?text=Buku+3" alt="Buku 3" onclick="showDescription('deskripsiBuku3')">
-                <div id="deskripsiBuku3" class="description">
-                    <p><strong>Buku 3:</strong> Sebuah novel inspiratif yang mengajak pembaca untuk mengejar impian mereka tanpa takut gagal.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function showDescription(id) {
-            // Menyembunyikan semua deskripsi
-            let descriptions = document.querySelectorAll('.description');
-            descriptions.forEach(function(description) {
-                description.style.display = 'none';
-            });
-
-            // Menampilkan deskripsi yang diklik
+                // Menampilkan deskripsi yang diklik
             let descriptionToShow = document.getElementById(id);
             descriptionToShow.style.display = 'block';
         }
