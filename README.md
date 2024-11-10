@@ -64,6 +64,7 @@
                         <li><a href="table pemesanan.html">Submenu-3</a></li>
                         <li><a href="modul52.html">Modul5-2</a></li>
                         <li><a href="modul53.html">Modul5-3</a></li>
+                        <li><a href="modul6.html">Modul6-1</a></li>
                     </ul>
                 </li>
             </ul>
