@@ -1,1 +1,28 @@
+<html>
+<body>
+<header>
+<h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
+<h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
+<p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
+<p><a href="https://perpustakaan.iainfmpapua.ac.id">Website Perpustakaan Iaian Fattahul Muluk Papua</a></p>
+</header>
+    
+<h2>Gambar Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" alt="Perpustakaan IAIN Fattahul Muluk Papua" style="width:100%; height:auto;">
 
+<h2>Video Profil Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/on_OgiR0iVk" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+<h1>Inong Dang Ho Na Sala</h1>
+<audio controls>
+    <source src="path/to/your/audio/InongDangHoNaSalaOsenHutasoit.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</html>
