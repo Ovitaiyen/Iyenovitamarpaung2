@@ -41,4 +41,121 @@
     <br>
     <input type="submit" value="Submit">
 </form>
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Penerbit</th>
+            <th>Tahun Terbit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Pemrograman Web Dasar</td>
+            <td>Andi Saputra</td>
+            <td>Media Press</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pengenalan HTML dan CSS</td>
+            <td>Budi Santoso</td>
+            <td>Ilmu Komputer</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JavaScript untuk Pemula</td>
+            <td>Siti Rahmawati</td>
+            <td>Edu Books</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Database dan SQL</td>
+            <td>Joko Widodo</td>
+            <td>Tech Press</td>
+            <td>2022</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Formulir Pemesanan Buku</h2>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <th>Nomor Anggota Perpustakaan</th>
+            <td><input type="text" name="nomor_anggota" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Pemesanan</th>
+            <td><input type="date" name="tanggal_pemesanan" required></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>No HP</th>
+            <td><input type="text" name="no_hp" required></td>
+        </tr>
+        <tr>
+            <th>Penulis Buku</th>
+            <td><input type="text" name="penulis_buku" required></td>
+        </tr>
+        <tr>
+            <th>No ISBN</th>
+            <td><input type="text" name="no_isbn" required></td>
+        </tr>
+        <tr>
+            <th>Judul Buku Yang Dipesan</th>
+            <td><input type="text" name="judul_buku" required></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Formulir Perpanjangan Peminjaman Buku</h2>
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th>Nama</th>
+            <td><input type="text" name="nama" required></td>
+        </tr>
+        <tr>
+            <th>Nomor Anggota Perpustakaan</th>
+            <td><input type="text" name="nomor_anggota" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Peminjaman</th>
+            <td><input type="date" name="tanggal_peminjaman" required></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <th>No Telepon</th>
+            <td><input type="text" name="no_telepon" required></td>
+        </tr>
+        <tr>
+            <th>No ISBN</th>
+            <td><input type="text" name="no_isbn" required></td>
+        </tr>
+        <tr>
+            <th>Tanggal Perpanjangan Buku</th>
+            <td><input type="date" name="tanggal_perpanjangan" required></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Submit">
+</form>
 </html>
