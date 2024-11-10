@@ -62,12 +62,6 @@
                         <li><a href="selamat datang.html">Submenu-1</a></li>
                         <li><a href="buku.html">Submenu-2</a></li>
                         <li><a href="table pemesanan.html">Submenu-3</a></li>
-                        <li><a href="modul 1.html">Submenu-4</a></li>
-                        <li><a href="modul 2.html">Submenu-5</a></li>
-                        <li><a href="modul 3.html">Submenu-6</a></li>
-                        <li><a href="modul 4.html">Submenu-7</a></li>
-                        <li><a href="modul 5.html">Submenu-8</a></li>
-                        <li><a href="modul 6.html">Submenu-9</a></li>
                     </ul>
                 </li>
             </ul>
