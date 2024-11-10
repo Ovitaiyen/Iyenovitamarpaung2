@@ -3,95 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Online</title>
+    <title>Pameran Buku</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         h1 {
             text-align: center;
+            color: #333;
         }
-        .book-list, .borrow-section {
-            margin-top: 20px;
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px; /* Menambahkan jarak antara item */
         }
+
         .book-item {
-            margin: 10px 0;
+            margin: 15px;
+            text-align: center;
+            flex-basis: 22%; /* Menentukan lebar minimum item di layar besar */
+        }
+
+        .book-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .book-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .description {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            margin-top: 10px;
             padding: 10px;
-            background-color: #e0e0e0;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .alert {
-            color: red;
-            font-weight: bold;
+
+        .description.show {
+            display: block;
+            opacity: 1;
         }
-        .info {
-            color: green;
+
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book-item {
+                flex-basis: 80%; /* Membuat item lebih lebar di layar kecil */
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Selamat Datang di Perpustakaan Online</h1>
+    <div class="container">
+        <h1>Pameran Buku</h1>
 
-    <div id="book-list" class="book-list">
-        <h2>Daftar Buku:</h2>
+        <div class="gallery">
+            <!-- Buku 1 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/bkjs/files/shot.jpg" alt="Cover Buku 1" onclick="showDescription('deskripsiBuku1')" aria-label="Klik untuk melihat deskripsi Buku 1">
+                <div id="deskripsiBuku1" class="description">
+                    <p><strong>Buku 1:</strong> Buku ini menceritakan petualangan seru di dunia fantasi. Ikuti kisahnya yang penuh misteri!</p>
+                </div>
+            </div>
+            <!-- Buku 2 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/atrz/files/shot.jpg" alt="Cover Buku 2" onclick="showDescription('deskripsiBuku2')" aria-label="Klik untuk melihat deskripsi Buku 2">
+                <div id="deskripsiBuku2" class="description">
+                    <p><strong>Buku 2:</strong> Buku ini membahas kehidupan sehari-hari dengan humor yang menghibur. Cocok untuk semua kalangan.</p>
+                </div>
+            </div>
+            <!-- Buku 3 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/wuhz/files/shot.jpg" alt="Cover Buku 3" onclick="showDescription('deskripsiBuku3')" aria-label="Klik untuk melihat deskripsi Buku 3">
+                <div id="deskripsiBuku3" class="description">
+                    <p><strong>Buku 3:</strong> Sebuah novel inspiratif yang mengajak pembaca untuk mengejar impian mereka tanpa takut gagal.</p>
+                </div>
+            </div>
+            <!-- Buku 4 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/pkyr/files/shot.jpg" alt="Cover Buku 4" onclick="showDescription('deskripsiBuku4')" aria-label="Klik untuk melihat deskripsi Buku 4">
+                <div id="deskripsiBuku4" class="description">
+                    <p><strong>Buku 4:</strong> Buku ini mengeksplorasi berbagai pandangan tentang kehidupan dan bagaimana kita bisa menjalani hidup dengan bijak.</p>
+                </div>
+            </div>
+            <!-- Buku 5 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/qzfa/files/shot.jpg" alt="Cover Buku 5" onclick="showDescription('deskripsiBuku5')" aria-label="Klik untuk melihat deskripsi Buku 5">
+                <div id="deskripsiBuku5" class="description">
+                    <p><strong>Buku 5:</strong> Mengungkap rahasia sejarah yang terlupakan dalam buku yang penuh petualangan dan penemuan besar.</p>
+                </div>
+            </div>
+            <!-- Buku 6 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/gvij/files/shot.jpg" alt="Cover Buku 6" onclick="showDescription('deskripsiBuku6')" aria-label="Klik untuk melihat deskripsi Buku 6">
+                <div id="deskripsiBuku6" class="description">
+                    <p><strong>Buku 6:</strong> Sebuah buku yang mengajak pembaca untuk mengubah cara pandang terhadap kehidupan sehari-hari dan menemukan kebahagiaan sejati.</p>
+                </div>
+            </div>
+            <!-- Buku 7 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/iswr/files/shot.jpg" alt="Cover Buku 7" onclick="showDescription('deskripsiBuku7')" aria-label="Klik untuk melihat deskripsi Buku 7">
+                <div id="deskripsiBuku7" class="description">
+                    <p><strong>Buku 7:</strong> Buku ini membawa pembaca ke dalam dunia bisnis dan memberikan wawasan tentang cara sukses dalam berwirausaha.</p>
+                </div>
+            </div>
+            <!-- Buku 8 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/ulqe/files/shot.jpg" alt="Cover Buku 8" onclick="showDescription('deskripsiBuku8')" aria-label="Klik untuk melihat deskripsi Buku 8">
+                <div id="deskripsiBuku8" class="description">
+                    <p><strong>Buku 8:</strong> Buku ini mengajarkan tentang cara-cara praktis untuk mengelola stres dan hidup lebih seimbang.</p>
+                </div>
+            </div>
+            <!-- Buku 9 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/meft/files/shot.jpg" alt="Cover Buku 9" onclick="showDescription('deskripsiBuku9')" aria-label="Klik untuk melihat deskripsi Buku 9">
+                <div id="deskripsiBuku9" class="description">
+                    <p><strong>Buku 9:</strong> Sebuah cerita tentang pertemuan tak terduga dan bagaimana hal itu mengubah hidup seseorang untuk selamanya.</p>
+                </div>
+            </div>
+            <!-- Buku 10 -->
+            <div class="book-item">
+                <img src="https://online.fliphtml5.com/rmpye/hnzk/files/shot.jpg" alt="Cover Buku 10" onclick="showDescription('deskripsiBuku10')" aria-label="Klik untuk melihat deskripsi Buku 10">
+                <div id="deskripsiBuku10" class="description">
+                    <p><strong>Buku 10:</strong> Buku ini menceritakan tentang perjalanan seorang petualang yang menaklukkan dunia dan menemukan makna sejati kehidupan.</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="borrow-section">
-        <label for="bookCount">Masukkan jumlah buku yang ingin dipinjam:</label>
-        <input type="number" id="bookCount" min="1" max="10">
-        <button onclick="borrowBooks()">Pinjam Buku</button>
-    </div>
-
-    <div id="message" class="alert"></div>
 
     <script>
-        const books = [
-            { title: "Pemrograman Web", author: "John Doe", available: true },
-            { title: "Algoritma Dasar", author: "Jane Smith", available: true },
-            { title: "Pemrograman Python", author: "Mark Lee", available: false },
-            { title: "Database Modern", author: "Sara Ali", available: true },
-            { title: "Sistem Operasi", author: "David Kim", available: false }
-        ];
-
-        function displayBooks() {
-            const bookListDiv = document.getElementById("book-list");
-            bookListDiv.innerHTML = "<h2>Daftar Buku:</h2>";
-            books.forEach(book => {
-                const bookItem = document.createElement("div");
-                bookItem.classList.add("book-item");
-                bookItem.innerHTML = <strong>${book.title}</strong> oleh ${book.author} - ${book.available ? 'Tersedia' : 'Tidak Tersedia'};
-                bookListDiv.appendChild(bookItem);
+        function showDescription(id) {
+            // Menyembunyikan semua deskripsi
+            let descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(function(description) {
+                description.classList.remove('show');
             });
+
+            // Menampilkan deskripsi yang diklik
+            let descriptionToShow = document.getElementById(id);
+            descriptionToShow.classList.add('show');
         }
-
-        function borrowBooks() {
-            const bookCount = parseInt(document.getElementById("bookCount").value);
-            const messageDiv = document.getElementById("message");
-
-            if (isNaN(bookCount) || bookCount < 1) {
-                messageDiv.textContent = "Harap masukkan jumlah buku yang valid!";
-                messageDiv.className = "alert";
-                return;
-            }
-
-            const booksToBorrow = books.filter(book => book.available).slice(0, bookCount);
-            
-            if (booksToBorrow.length > 0) {
-                booksToBorrow.forEach(book => book.available = false);
-                messageDiv.textContent = Anda berhasil meminjam buku: ${booksToBorrow.map(b => b.title).join(", ")}.;
-                messageDiv.className = "info";
-            } else {
-                messageDiv.textContent = "Tidak ada buku yang tersedia untuk dipinjam.";
-                messageDiv.className = "alert";
-            }
-
-            displayBooks();
-        }
-
-        window.onload = displayBooks;
     </script>
+
 </body>
 </html>
