@@ -1,1 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Perpustakaan IAIN Fattahul Muluk Papua</title>
+    <style>
+        /* Gaya CSS untuk tata letak */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h2, h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #155a8a;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulir Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Informasi Pengguna</legend>
+        <table>
+            <tr>
+                <th><label for="nama">Nama</label></th>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+            <tr>
+                <th><label for="nim">NIM</label></th>
+                <td><input type="text" id="nim" name="nim" required></td>
+            </tr>
+            <tr>
+                <th><label for="alamat">Alamat</label></th>
+                <td><textarea id="alamat" name="alamat" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <th>Jenis Kelamin</th>
+                <td>
+                    <label><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+                    <label><input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="email">Email</label></th>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="no_hp">No HP</label></th>
+                <td><input type="tel" id="no_hp" name="no_hp" required></td>
+            </tr>
+            <tr>
+                <th><label for="tempat_lahir">Tempat Lahir</label></th>
+                <td><input type="text" id="tempat_lahir" name="tempat_lahir" required></td>
+            </tr>
+            <tr>
+                <th><label for="tanggal_lahir">Tanggal Lahir</label></th>
+                <td><input type="date" id="tanggal_lahir" name="tanggal_lahir" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+<h1>Daftar Bahan Buku</h1>
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Judul Buku</th>
+            <th>Pengarang</th>
+            <th>Penerbit</th>
+            <th>Tahun Terbit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Pemrograman Web Dasar</td>
+            <td>Andi Saputra</td>
+            <td>Media Press</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pengenalan HTML dan CSS</td>
+            <td>Budi Santoso</td>
+            <td>Ilmu Komputer</td>
+            <td>2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>JavaScript untuk Pemula</td>
+            <td>Siti Rahmawati</td>
+            <td>Edu Books</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Database dan SQL</td>
+            <td>Joko Widodo</td>
+            <td>Tech Press</td>
+            <td>2022</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Formulir Pemesanan Buku</h2>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Informasi Pemesanan</legend>
+        <table>
+            <tr>
+                <th><label for="nama_pemesan">Nama</label></th>
+                <td><input type="text" id="nama_pemesan" name="nama" required></td>
+            </tr>
+            <tr>
+                <th><label for="nomor_anggota">Nomor Anggota Perpustakaan</label></th>
+                <td><input type="text" id="nomor_anggota" name="nomor_anggota" required></td>
+            </tr>
+            <tr>
+                <th><label for="tanggal_pemesanan">Tanggal Pemesanan</label></th>
+                <td><input type="date" id="tanggal_pemesanan" name="tanggal_pemesanan" required></td>
+            </tr>
+            <tr>
+                <th><label for="email_pemesan">Email</label></th>
+                <td><input type="email" id="email_pemesan" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="no_hp_pemesan">No HP</label></th>
+                <td><input type="tel" id="no_hp_pemesan" name="no_hp" required></td>
+            </tr>
+            <tr>
+                <th><label for="penulis_buku">Penulis Buku</label></th>
+                <td><input type="text" id="penulis_buku" name="penulis_buku" required></td>
+            </tr>
+            <tr>
+                <th><label for="no_isbn">No ISBN</label></th>
+                <td><input type="text" id="no_isbn" name="no_isbn" required></td>
+            </tr>
+            <tr>
+                <th><label for="judul_buku">Judul Buku Yang Dipesan</label></th>
+                <td><input type="text" id="judul_buku" name="judul_buku" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+<h2>Formulir Perpanjangan Peminjaman Buku</h2>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Perpanjangan Peminjaman</legend>
+        <table>
+            <tr>
+                <th><label for="nama_peminjaman">Nama</label></th>
+                <td><input type="text" id="nama_peminjaman" name="nama" required></td>
+            </tr>
+            <tr>
+                <th><label for="nomor_anggota_peminjaman">Nomor Anggota Perpustakaan</label></th>
+                <td><input type="text" id="nomor_anggota_peminjaman" name="nomor_anggota" required></td>
+            </tr>
+            <tr>
+                <th><label for="tanggal_peminjaman">Tanggal Peminjaman</label></th>
+                <td><input type="date" id="tanggal_peminjaman" name="tanggal_peminjaman" required></td>
+            </tr>
+            <tr>
+                <th><label for="email_peminjaman">Email</label></th>
+                <td><input type="email" id="email_peminjaman" name="email" required></td>
+            </tr>
+            <tr>
+                <th><label for="no_telepon">No Telepon</label></th>
+                <td><input type="tel" id="no_telepon" name="no_telepon" required></td>
+            </tr>
+            <tr>
+                <th><label for="no_isbn_perpanjangan">No ISBN</label></th>
+                <td><input type="text" id="no_isbn_perpanjangan" name="no_isbn" required></td>
+            </tr>
+            <tr>
+                <th><label for="tanggal_perpanjangan">Tanggal Perpanjangan Buku</label></th>
+                <td><input type="date" id="tanggal_perpanjangan" name="tanggal_perpanjangan" required></td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
 
