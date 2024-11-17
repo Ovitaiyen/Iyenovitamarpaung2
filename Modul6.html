@@ -1,5 +1,17 @@
-<!-- CSS untuk Desain Halaman -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+    
+    <!-- Memuat pustaka jQuery dan jQuery UI untuk datepicker -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
     <style>
+        /* CSS untuk Desain Halaman */
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -17,6 +29,7 @@
         #book-list {
             list-style-type: none;
             padding: 0;
+            display: none;
         }
         #book-list li {
             background-color: #fff;
@@ -55,24 +68,30 @@
             border-radius: 5px;
             border: 1px solid #ddd;
         }
+        /* Tambahan styling untuk button */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h1>Perpustakaan Digital</h1>
         
         <!-- Tombol untuk Menampilkan Daftar Buku dan Menambahkan Buku -->
-        <button class="button" id="toggle-list">Tampilkan Daftar Buku</button>
-        <button class="button" id="toggle-form">Tambah Buku</button>
-
+        <div class="button-container">
+            <button class="button" id="toggle-list">Tampilkan Daftar Buku</button>
+            <button class="button" id="toggle-form">Tambah Buku</button>
+        </div>
+        
         <!-- Daftar Buku -->
         <ul id="book-list">
             <li>Buku 1 - "Belajar JavaScript"</li>
             <li>Buku 2 - "Pemrograman Web"</li>
             <li>Buku 3 - "Dasar-Dasar CSS"</li>
         </ul>
-
+        
         <!-- Form untuk Menambahkan Buku Baru -->
         <div id="add-book-form">
             <h3>Tambah Buku Baru</h3>
@@ -88,7 +107,9 @@
         // Menunggu hingga DOM siap
         $(document).ready(function() {
             // Mengaktifkan Datepicker pada input tanggal
-            $('#publish-date').datepicker();
+            $('#publish-date').datepicker({
+                dateFormat: 'dd-mm-yy' // Menentukan format tanggal
+            });
 
             // Menampilkan atau Menyembunyikan Daftar Buku dengan Efek Toggle
             $('#toggle-list').click(function() {
@@ -117,6 +138,5 @@
             });
         });
     </script>
-
 </body>
 </html>
