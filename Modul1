@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan IAIN Fattahul Muluk Papua</title>
+    <style>
+        /* Gaya CSS untuk tata letak */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header h2 {
+            margin: 5px 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        audio {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PERPUSTAKAAN IAIN FATTAHUL MULUK PAPUA</h1>
+    <h2>Selamat Datang Di Perpustakaan Iyen Ovita Marpaung!</h2>
+    <p>Perkenalkan nama saya Iyen Ovita Marpaung, NIM 222201011, Program Studi D3 Perpustakaan, Mata Kuliah Pemrograman Web. Ini merupakan homepage perpustakaan pertama saya.</p>
+    <p><a href="https://perpustakaan.iainfmpapua.ac.id" target="_blank">Website Perpustakaan IAIN Fattahul Muluk Papua</a></p>
+</header>
+
+<h2>Gambar Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<img src="https://belajargiat.id/wp-content/uploads/2019/08/profil-iain-papua-1024x576.jpg" alt="Perpustakaan IAIN Fattahul Muluk Papua">
+
+<h2>Video Profil Perpustakaan IAIN Fattahul Muluk Papua</h2>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/on_OgiR0iVk" 
+    title="Profil Perpustakaan IAIN Fattahul Muluk Papua"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<h1>Inong Dang Ho Na Sala</h1>
+<audio controls>
+    <source src="path/to/your/audio/InongDangHoNaSalaOsenHutasoit.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
 
