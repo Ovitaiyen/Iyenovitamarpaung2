@@ -1,1 +1,122 @@
+<!-- CSS untuk Desain Halaman -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #book-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #book-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #book-list li:hover {
+            background-color: #f0f0f0;
+        }
+        #add-book-form {
+            display: none;
+            margin-top: 20px;
+        }
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="container">
+        <h1>Perpustakaan Digital</h1>
+        
+        <!-- Tombol untuk Menampilkan Daftar Buku dan Menambahkan Buku -->
+        <button class="button" id="toggle-list">Tampilkan Daftar Buku</button>
+        <button class="button" id="toggle-form">Tambah Buku</button>
+
+        <!-- Daftar Buku -->
+        <ul id="book-list">
+            <li>Buku 1 - "Belajar JavaScript"</li>
+            <li>Buku 2 - "Pemrograman Web"</li>
+            <li>Buku 3 - "Dasar-Dasar CSS"</li>
+        </ul>
+
+        <!-- Form untuk Menambahkan Buku Baru -->
+        <div id="add-book-form">
+            <h3>Tambah Buku Baru</h3>
+            <label for="book-title">Judul Buku:</label>
+            <input type="text" id="book-title" placeholder="Masukkan Judul Buku" />
+            <label for="publish-date">Tanggal Penerbitan:</label>
+            <input type="text" id="publish-date" placeholder="Pilih Tanggal Penerbitan" />
+            <button class="button" id="add-book">Tambah Buku</button>
+        </div>
+    </div>
+
+    <script>
+        // Menunggu hingga DOM siap
+        $(document).ready(function() {
+            // Mengaktifkan Datepicker pada input tanggal
+            $('#publish-date').datepicker();
+
+            // Menampilkan atau Menyembunyikan Daftar Buku dengan Efek Toggle
+            $('#toggle-list').click(function() {
+                $('#book-list').toggle('slow');
+            });
+
+            // Menampilkan atau Menyembunyikan Form Tambah Buku dengan Efek Fade
+            $('#toggle-form').click(function() {
+                $('#add-book-form').fadeToggle('slow');
+            });
+
+            // Menambahkan Buku Baru ke Daftar Buku
+            $('#add-book').click(function() {
+                var bookTitle = $('#book-title').val();
+                var publishDate = $('#publish-date').val();
+
+                if (bookTitle && publishDate) {
+                    // Menambahkan buku baru ke dalam daftar
+                    $('#book-list').append('<li>' + bookTitle + ' - ' + publishDate + '</li>');
+                    // Mengosongkan form input setelah menambahkan buku
+                    $('#book-title').val('');
+                    $('#publish-date').val('');
+                } else {
+                    alert('Judul buku dan tanggal penerbitan tidak boleh kosong!');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
