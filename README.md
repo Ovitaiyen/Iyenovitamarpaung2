@@ -55,9 +55,9 @@
     <div id="halaman">
         <nav class="navbar"> <!-- Menambahkan kelas untuk styling -->
             <ul>
-                <li><a href="#">Menu</a></li>
+                <li><a href="#">Beranda</a></li>
                 <li>
-                    <a href="#">dropdown</a>
+                    <a href="#">Modul</a>
                     <ul>
                         <li><a href="selamat datang.html">Submenu-1</a></li>
                         <li><a href="buku.html">Submenu-2</a></li>
