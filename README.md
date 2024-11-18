@@ -301,6 +301,10 @@
 
 <p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen
 
+</main>
 
+<footer>
+    <p>© 2024 Perpustakaan Maryska Kostantia</p>
+</footer>
 </body>
 </html>
