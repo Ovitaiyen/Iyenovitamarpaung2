@@ -1,10 +1,20 @@
 <?php
 // Loop dari 1 sampai 5
 for ($i = 1; $i <= 5; $i++) {
-    // Membuat kalimat dengan format "Ini adalah hari ke-1 belajar PHP"
-    echo "Ini adalah hari ke-1" . $i . " belajar PHP<br>";
+    // Periksa jika hari ke-5, ubah penulisan "Ilari" menjadi "Ini"
+    if ($i == 3) {
+        // Mengoreksi penulisan untuk hari ke-3
+        echo "Ini adalah hari ke-" . $i . " belajar PHP<br>";
+    } elseif ($i == 5) {
+        // Mengoreksi penulisan untuk hari ke-5
+        echo "Ini adalah hari ke-" . $i . " belajar PHP<br>";
+    } else {
+        // Untuk hari lainnya, tetap format yang sama
+        echo "Ini adalah hari ke-" . $i . " belajar PHP<br>";
+    }
 }
 ?>
+
 
 
 
