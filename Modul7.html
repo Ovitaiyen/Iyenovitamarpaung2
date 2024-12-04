@@ -1,16 +1,22 @@
-<?php
-// Loop dari 1 sampai 5
-for ($i = 1; $i <= 5; $i++) {
-    // Menggunakan struktur kondisional untuk menampilkan pesan yang berbeda
-    if ($i == 1) {
-        echo "Selamat datang di hari pertama belajar PHP!<br>";
-    } elseif ($i == 5) {
-        echo "Ini adalah hari terakhir belajar PHP. Semangat!<br>";
-    } else {
-        echo "Ini adalah hari ke-" . $i . " belajar PHP.<br>";
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari Belajar PHP</title>
+</head>
+<body>
+    <!-- Menampilkan hari ke-1 di bagian atas halaman -->
+    <h1>Ini adalah hari ke-1 belajar PHP</h1>
+    
+    <?php
+    // Menggunakan loop untuk menampilkan "ini adalah hari ke-X belajar PHP"
+    for ($i = 2; $i <= 1000; $i++) {
+        echo "<p>Ini adalah hari ke-" . $i . " belajar PHP</p>";
     }
-}
-?>
+    ?>
+</body>
+</html>
 
 
 
