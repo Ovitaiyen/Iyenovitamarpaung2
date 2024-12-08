@@ -3,33 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hari Belajar PHP</title>
+    <title>Belajar PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .day {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Ini adalah hari ke-1 belajar PHP</h1>
-    
+    <h1>Belajar PHP</h1>
     <?php
-    // Tentukan batasan jumlah hari yang ditampilkan per halaman
-    $perPage = 100;
-    $currentPage = isset($_GET['page']) ? $_GET['page'] : 1;
-    $start = ($currentPage - 1) * $perPage;
-
-    // Menampilkan 100 hari per halaman
-    for ($i = $start + 2; $i <= $start + $perPage + 1 && $i <= 1000; $i++) {
-        echo "<p>Ini adalah hari ke-1" . $i . " belajar PHP</p>";
+    for ($i = 1; $i <= 1000; $i++) {
+        echo "<div class='day'>Ini adalah hari ke-$i belajar PHP</div>";
     }
     ?>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Bilangan</title>
+</head>
+<body>
+    <h1>Input Dua Bilangan</h1>
+    <form action="hasil.php" method="post">
+        <label for="bilangan1">Bilangan 1:</label>
+        <input type="number" id="bilangan1" name="bilangan1" required><br><br>
 
-    <!-- Navigasi Halaman -->
-    <div>
-        <?php if ($currentPage > 1): ?>
-            <a href="?page=<?php echo $currentPage - 1; ?>">Sebelumnya</a>
-        <?php endif; ?>
+        <label for="bilangan2">Bilangan 2:</label>
+        <input type="number" id="bilangan2" name="bilangan2" required><br><br>
+
+        <label for="operasi">Pilih Operasi:</label>
+        <select id="operasi" name="operasi">
+            <option value="tambah">Tambah</option>
+            <option value="kurang">Kurang</option>
+            <option value="kali">Kali</option>
+            <option value="bagi">Bagi</option>
+        </select><br><br>
+
+        <input type="submit" value="Hitung">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Perhitungan</title>
+</head>
+<body>
+    <h1>Hasil Perhitungan</h1>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $bilangan1 = $_POST['bilangan1'];
+        $bilangan2 = $_POST['bilangan2'];
+        $operasi = $_POST['operasi'];
         
-        <?php if (($currentPage * $perPage) < 1000): ?>
-            <a href="?page=<?php echo $currentPage + 1; ?>">Selanjutnya</a>
-        <?php endif; ?>
-    </div>
+        switch ($operasi) {
+            case 'tambah':
+                $hasil = $bilangan1 + $bilangan2;
+                echo "Hasil: $bilangan1 + $bilangan2 = $hasil";
+                break;
+            case 'kurang':
+                $hasil = $bilangan1 - $bilangan2;
+                echo "Hasil: $bilangan1 - $bilangan2 = $hasil";
+                break;
+            case 'kali':
+                $hasil = $bilangan1 * $bilangan2;
+                echo "Hasil: $bilangan1 * $bilangan2 = $hasil";
+                break;
+            case 'bagi':
+                if ($bilangan2 != 0) {
+                    $hasil = $bilangan1 / $bilangan2;
+                    echo "Hasil: $bilangan1 / $bilangan2 = $hasil";
+                } else {
+                    echo "Error: Pembagian dengan nol tidak diperbolehkan.";
+                }
+                break;
+            default:
+                echo "Operasi tidak valid.";
+                break;
+        }
+    }
+    ?>
+    
+    <br><br>
+    <a href="input.php">Kembali</a>
+</body>
+                </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="login_process.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Login</title>
+</head>
+<body>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Ganti dengan username dan password yang diinginkan
+    $valid_username = "admin";
+    $valid_password = "password123";
+
+    if (empty($username) || empty($password)) {
+        echo "Input tidak lengkap. Silakan masukkan username dan password.";
+    } elseif ($username === $valid_username && $password === $valid_password) {
+        echo "Login sukses! Selamat datang, $username.";
+    } else {
+        echo "Login gagal. Username atau password salah.";
+    }
+}
+?>
+
+<br><br>
+<a href="login.php">Kembali ke Halaman Login</a>
+
 </body>
 </html>
 
