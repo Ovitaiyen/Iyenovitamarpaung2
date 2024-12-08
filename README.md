@@ -62,9 +62,9 @@
                         <li><a href="selamat datang.html">Kolom-1</a></li>
                         <li><a href="buku.html">Kolom-2</a></li>
                         <li><a href="table pemesanan.html">Kolom-3</a></li>
-                        <li><a href="Modul1.html">Modul-1</a></li>
-                        <li><a href="Modul2.html">Modul-2</a></li>
-                        <li><a href="Modul3.html">modul-3</a></li>
+                        <li><a href="Modul1.html">Modul 1</a></li>
+                        <li><a href="Modul2.html">Modul 2</a></li>
+                        <li><a href="Modul3.html">modul 3</a></li>
                         <li><a href="Modul52.html">Modul5-2</a></li>
                         <li><a href="Modul53.html">Modul5-3</a></li>
                         <li><a href="Modul6.html">modul6</a></li>
