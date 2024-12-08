@@ -67,8 +67,8 @@
                         <li><a href="Modul3.html">modul-3</a></li>
                         <li><a href="Modul52.html">Modul5-2</a></li>
                         <li><a href="Modul53.html">Modul5-3</a></li>
-                        <li><a href="Modul6.html">modul6-1</a></li>
-                        <li><a href="Modul7.html">modul7-1</a></li>
+                        <li><a href="Modul6.html">modul6</a></li>
+                        <li><a href="index.php">modul7-1</a></li>
                     </ul>
                 </li>
             </ul>
