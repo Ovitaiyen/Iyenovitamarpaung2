@@ -20,58 +20,14 @@
             font-size: 18px;
             color: #555;
         }
-        .pagination {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .pagination a {
-            padding: 10px;
-            margin: 0 5px;
-            background-color: #ddd;
-            text-decoration: none;
-            color: #333;
-        }
-        .pagination a:hover {
-            background-color: #bbb;
-        }
     </style>
 </head>
 <body>
     <h1>Belajar PHP</h1>
-
     <?php
-    // Menentukan jumlah hari per halaman
-    $days_per_page = 10;
-    
-    // Menentukan halaman saat ini
-    $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-    
-    // Menghitung hari pertama yang ditampilkan
-    $start_day = ($page - 1) * $days_per_page + 1;
-    
-    // Menampilkan hari dari start_day hingga start_day + days_per_page - 1
-    for ($i = $start_day; $i < $start_day + $days_per_page; $i++) {
+    for ($i = 1; $i <= 1000; $i++) {
         echo "<div class='day'>Ini adalah hari ke-$i belajar PHP</div>";
     }
-    
-    // Menentukan jumlah total hari
-    $total_days = 1000;
-    
-    // Menampilkan navigasi halaman
-    $total_pages = ceil($total_days / $days_per_page);
-    echo "<div class='pagination'>";
-    
-    // Menampilkan tombol sebelumnya (Previous)
-    if ($page > 1) {
-        echo "<a href='?page=" . ($page - 1) . "'>Sebelumnya</a>";
-    }
-    
-    // Menampilkan tombol berikutnya (Next)
-    if ($page < $total_pages) {
-        echo "<a href='?page=" . ($page + 1) . "'>Berikutnya</a>";
-    }
-    
-    echo "</div>";
     ?>
 </body>
 </html>
