@@ -1,44 +1,9 @@
-CREATE DATABASE db_belajar;
-
-USE db_belajar;
-
-CREATE TABLE produk (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nama_produk VARCHAR(100) NOT NULL,
-    harga DECIMAL(10, 2) NOT NULL,
-    stok INT NOT NULL,
-    deskripsi TEXT NOT NULL
-);
-
-<?php
-$host = "localhost"; // atau IP server database
-$username = "root";  // ganti dengan username MySQL Anda
-$password = "";      // ganti dengan password MySQL Anda
-$dbname = "db_belajar";
-
-// Membuat koneksi ke database
-$conn = new mysqli($host, $username, $password, $dbname);
-
-// Mengecek koneksi
-if ($conn->connect_error) {
-    die("Koneksi gagal: " . $conn->connect_error);
-}
-?>
-
-<?php
-include 'koneksi.php';
-
-// Mengambil data dari database
-$sql = "SELECT * FROM produk";
-$result = $conn->query($sql);
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Produk</title>
+    <title>Daftar Produk</title>
 </head>
 <body>
     <h1>Daftar Produk</h1>
@@ -73,27 +38,6 @@ $result = $conn->query($sql);
 </body>
 </html>
 
-<?php
-include 'koneksi.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nama_produk = $_POST['nama_produk'];
-    $harga = $_POST['harga'];
-    $stok = $_POST['stok'];
-    $deskripsi = $_POST['deskripsi'];
-
-    // Query untuk menambahkan data
-    $sql = "INSERT INTO produk (nama_produk, harga, stok, deskripsi) VALUES ('$nama_produk', '$harga', '$stok', '$deskripsi')";
-    
-    if ($conn->query($sql) === TRUE) {
-        echo "Produk berhasil ditambahkan!";
-        header("Location: index.php");
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -123,7 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="index.php">Kembali ke Daftar Produk</a>
 </body>
 </html>
+5. Mengedit Data Produk (edit.php)
+Halaman ini menyediakan formulir untuk mengedit data produk berdasarkan ID.
 
+php
+Copy code
 <?php
 include 'koneksi.php';
 
@@ -183,7 +131,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <a href="index.php">Kembali ke Daftar Produk</a>
 </body>
 </html>
+6. Menghapus Data Produk (hapus.php)
+Halaman ini menghapus produk berdasarkan ID yang diterima melalui parameter URL.
 
+php
+Copy code
 <?php
 include 'koneksi.php';
 
@@ -203,4 +155,3 @@ if (isset($_GET['id'])) {
 
 $conn->close();
 ?>
-
